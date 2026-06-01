@@ -1,11 +1,10 @@
 body {
     margin: 0;
     height: 100vh;
-    background-image: url("images/Zolder.png");
+    background-image: url("../images/Slaapkamer.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: black;
 
     display: flex;
     justify-content: center;
@@ -17,10 +16,6 @@ body {
     width: 900px;
     height: 650px;
     position: relative;
-
-    background-image: url("images/Kamer2.png");
-    background-size: cover;
-    background-position: center;
     overflow: hidden;
 }
 
@@ -47,69 +42,69 @@ body {
 
 h1 {
     position: absolute;
-    top: 35px;
+    top: 30px;
+
     width: 100%;
 
     margin: 0;
 
     text-align: center;
-    color: white;
-
-    font-family: 'Cinzel', serif;
-    font-size: 26px;
-    font-weight: 400;
-    text-transform: uppercase;
-    line-height: 1.4;
-}
-
-.scan-top {
-    position: absolute;
-
-    width: 95px;
-    height: 95px;
-
-    top: 125px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    background-color: white;
-}
-
-.scan-row {
-    position: absolute;
-
-    top: 270px;
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    display: flex;
-    gap: 55px;
-}
-
-.scan-box {
-    width: 145px;
-    height: 180px;
-    background-color: white;
-}
-
-.next-btn {
-    position: absolute;
-
-    right: 40px;
-    bottom: 30px;
-
-    width: 180px;
-    height: 65px;
-
-    background-color: #423441;
 
     color: white;
     font-family: 'Cinzel', serif;
     font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
 
-    border: none;
-    border-radius: 12px;
+.puzzle-box {
+    position: absolute;
 
-    cursor: pointer;
+    top: 120px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 620px;
+    height: 330px;
+
+    background-color: #d3d3d3;
+}
+
+.scrambled-word {
+    text-align: center;
+
+    margin-top: 30px;
+
+    font-family: 'Cinzel', serif;
+    font-size: 34px;
+    color: black;
+}
+
+.letters {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    margin-top: 80px;
+}
+
+.letter-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.letter-box span {
+    font-family: 'Cinzel', serif;
+    font-size: 28px;
+    color: black;
+
+    margin-bottom: 10px;
+}
+
+.line {
+    width: 60px;
+    height: 2px;
+    background-color: black;
 }

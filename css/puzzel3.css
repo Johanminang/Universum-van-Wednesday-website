@@ -1,7 +1,7 @@
 body {
     margin: 0;
     height: 100vh;
-    background-image: url("images/Slaapkamer.png");
+    background-image: url("../images/Zolder.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -42,69 +42,47 @@ body {
 
 h1 {
     position: absolute;
-    top: 30px;
+    top: 25px;
 
     width: 100%;
 
     margin: 0;
 
     text-align: center;
-
     color: white;
+
     font-family: 'Cinzel', serif;
     font-size: 24px;
     font-weight: 400;
-    text-transform: uppercase;
+    line-height: 1.4;
 }
 
-.puzzle-box {
+.doors {
     position: absolute;
 
-    top: 120px;
+    top: 155px;
     left: 50%;
 
     transform: translateX(-50%);
 
-    width: 620px;
-    height: 330px;
-
-    background-color: #d3d3d3;
-}
-
-.scrambled-word {
-    text-align: center;
-
-    margin-top: 30px;
-
-    font-family: 'Cinzel', serif;
-    font-size: 34px;
-    color: black;
-}
-
-.letters {
     display: flex;
-    justify-content: center;
-    gap: 40px;
-
-    margin-top: 80px;
+    gap: 50px;
 }
 
-.letter-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+.door {
+    width: 120px;
+    height: 260px;
 
-.letter-box span {
+    background-color: #6d6666;
+
+    border: 10px solid black;
+
+    color: white;
     font-family: 'Cinzel', serif;
-    font-size: 28px;
-    color: black;
+    font-size: 60px;
 
-    margin-bottom: 10px;
+    cursor: pointer;
+
+    transition: 0.3s;
 }
 
-.line {
-    width: 60px;
-    height: 2px;
-    background-color: black;
-}
