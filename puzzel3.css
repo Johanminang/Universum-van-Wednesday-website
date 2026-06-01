@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url("images/Zolder.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cinzel', serif;
+}
+
+.game-screen {
+    width: 900px;
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+}
+
+.back,
+.home {
+    position: absolute;
+    top: 20px;
+
+    background: none;
+    border: none;
+
+    color: red;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.back {
+    left: 20px;
+}
+
+.home {
+    right: 20px;
+}
+
+h1 {
+    position: absolute;
+    top: 25px;
+
+    width: 100%;
+
+    margin: 0;
+
+    text-align: center;
+    color: white;
+
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.doors {
+    position: absolute;
+
+    top: 155px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 50px;
+}
+
+.door {
+    width: 120px;
+    height: 260px;
+
+    background-color: #6d6666;
+
+    border: 10px solid black;
+
+    color: white;
+    font-family: 'Cinzel', serif;
+    font-size: 60px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
