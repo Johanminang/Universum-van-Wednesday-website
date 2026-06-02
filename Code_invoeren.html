@@ -20,16 +20,37 @@
         </h1>
 
         <div class="code-letters">
-            <input type="text" maxlength="1" value="D">
-            <input type="text" maxlength="1" value="A">
-            <input type="text" maxlength="1" value="R">
-            <input type="text" maxlength="1" value="K">
+            <input type="text" maxlength="1" class="code-input">
+            <input type="text" maxlength="1" class="code-input">
+            <input type="text" maxlength="1" class="code-input">
+            <input type="text" maxlength="1" class="code-input">
         </div>
-
+        
         <button class="next-btn">Verder</button>
 
     </div>
 
 </div>
+
+<div id="wrongPopup" class="popup hidden">
+
+    <div class="popup-content">
+
+        <h2>Je hebt het fout!</h2>
+
+        <p class="wrong-text">
+            De studenten zijn nog<br>
+            steeds spoorloos
+        </p>
+
+        <button id="opnieuwBtn">
+            Probeer opnieuw
+        </button>
+
+    </div>
+
+</div>
+
+<script src="js/code_invoeren.js"></script>
 </body>
 </html>

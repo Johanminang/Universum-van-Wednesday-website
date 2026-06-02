@@ -19,13 +19,50 @@
       <div class="symbol">∨</div>
       <div class="symbol">◇</div>
       <div class="symbol">╱</div>
-      <div class="symbol">◜</div>
+      <div class="symbol">l</div>
 
-      <div class="letter">V</div>
-      <div class="letter">O</div>
-      <div class="letter">I</div>
-      <div class="letter">D</div>
+      <input type="text" maxlength="1" class="answer">
+      <input type="text" maxlength="1" class="answer">
+      <input type="text" maxlength="1" class="answer">
+      <input type="text" maxlength="1" class="answer">
     </div>
+
+    <button class="check-btn">Controleer</button>
   </div>
+
+  <div id="popup" class="popup hidden">
+
+    <div class="popup-content">
+
+        <h2>Je hebt het goed!</h2>
+
+        <p>Je letter is:</p>
+
+        <div class="letter-code">A</div>
+
+        <button id="verderBtn">Verder</button>
+
+    </div>
+
+</div>
+
+<div id="wrongPopup" class="popup hidden">
+
+    <div class="popup-content">
+
+        <h2>Je hebt het fout!</h2>
+
+        <p class="wrong-text">
+            De studenten zijn nog<br>
+            steeds spoorloos
+        </p>
+
+        <button id="opnieuwBtn">Probeer opnieuw</button>
+
+    </div>
+
+</div>
+
+<script src="js/puzzel2.js"></script>
 </body>
 </html>

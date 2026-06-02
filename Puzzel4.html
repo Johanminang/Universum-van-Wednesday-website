@@ -1,56 +1,97 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Puzzel 4</title>
-  <link rel="stylesheet" href="css/puzzel4.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzel 4</title>
+    <link rel="stylesheet" href="css/puzzel4.css">
 </head>
 <body>
+
     <div class="game-screen">
 
-    <button class="back">←</button>
-    <button class="home">⌂</button>
+        <button class="back">←</button>
+        <button class="home">⌂</button>
 
-    <h1>Vul het juiste woord in</h1>
+        <h1>Vul het juiste woord in</h1>
 
-    <div class="puzzle-box">
+        <div class="puzzle-box">
 
-        <div class="scrambled-word">
-            TGSOH
+            <div class="scrambled-word">
+                TGSOH
+            </div>
+
+            <div class="letters">
+
+                <div class="letter-box">
+                    <input type="text" maxlength="1" class="answer">
+                    <div class="line"></div>
+                </div>
+
+                <div class="letter-box">
+                    <input type="text" maxlength="1" class="answer">
+                    <div class="line"></div>
+                </div>
+
+                <div class="letter-box">
+                    <input type="text" maxlength="1" class="answer">
+                    <div class="line"></div>
+                </div>
+
+                <div class="letter-box">
+                    <input type="text" maxlength="1" class="answer">
+                    <div class="line"></div>
+                </div>
+
+                <div class="letter-box">
+                    <input type="text" maxlength="1" class="answer">
+                    <div class="line"></div>
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="letters">
+        <button class="check-btn">Controleer</button>
 
-            <div class="letter-box">
-                <span>G</span>
-                <div class="line"></div>
+        <div id="popup" class="popup hidden">
+
+            <div class="popup-content">
+
+                <h2>Je hebt het goed!</h2>
+
+                <p>Je letter is:</p>
+
+                <div class="letter-code">K</div>
+
+                <button id="verderBtn">Verder</button>
+
             </div>
 
-            <div class="letter-box">
-                <span>H</span>
-                <div class="line"></div>
-            </div>
+        </div>
 
-            <div class="letter-box">
-                <span>O</span>
-                <div class="line"></div>
-            </div>
+        <div id="wrongPopup" class="popup hidden">
 
-            <div class="letter-box">
-                <span>S</span>
-                <div class="line"></div>
-            </div>
+            <div class="popup-content">
 
-            <div class="letter-box">
-                <span>T</span>
-                <div class="line"></div>
+                <h2>Je hebt het fout!</h2>
+
+                <p class="wrong-text">
+                    De studenten zijn nog<br>
+                    steeds spoorloos
+                </p>
+
+                <button id="opnieuwBtn">
+                    Probeer opnieuw
+                </button>
+
             </div>
 
         </div>
 
     </div>
 
-</div>
+    <script src="js/puzzel4.js"></script>
+
 </body>
 </html>

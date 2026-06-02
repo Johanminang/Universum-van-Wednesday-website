@@ -85,3 +85,117 @@ h1 {
     color: black;
     font-size: 80px;
 }
+
+.answer {
+    width: 140px;
+    height: 140px;
+
+    background-color: #8b8b8b;
+    border: none;
+
+    text-align: center;
+
+    font-family: 'Cinzel', serif;
+    font-size: 80px;
+    color: black;
+}
+
+.check-btn {
+    display: block;
+    margin: 40px auto 0;
+
+    width: 220px;
+    height: 60px;
+
+    background-color: #423441;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.popup {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+}
+
+.popup-content {
+    width: 500px;
+    height: 380px;
+
+    background-color: #423441;
+
+    border-radius: 5px;
+
+    text-align: center;
+    color: white;
+
+    font-family: 'Cinzel', serif;
+}
+
+.popup-content h2 {
+    margin-top: 40px;
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.popup-content p {
+    margin-top: 35px;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.letter-code {
+    margin-top: 15px;
+    font-size: 90px;
+}
+
+#verderBtn {
+    margin-top: 25px;
+
+    width: 180px;
+    height: 55px;
+
+    background-color: #999999;
+    color: black;
+
+    border: none;
+    border-radius: 8px;
+
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#opnieuwBtn {
+    margin-top: 35px;
+
+    width: 280px;
+    height: 60px;
+
+    background-color: #a0a0a0;
+    color: black;
+
+    border: none;
+    border-radius: 10px;
+
+    font-family: 'Cinzel', serif;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}   

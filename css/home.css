@@ -30,13 +30,18 @@ h1 {
     margin: 0 auto;
 }
 
+a {
+    text-decoration: none;
+    margin-bottom: 80px;
+}
+
 button {
-    background-color:#423441;
+    background-color: #423441;
     color: red;
     font-size: 20pt;
-    width: 25%;
-    height: 10%;
-    margin-bottom: 80px;
+    width: 300px;
+    height: 70px;
     border-radius: 10px;
     border: 2px solid black;
+    cursor: pointer;
 }

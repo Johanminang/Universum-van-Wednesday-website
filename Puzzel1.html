@@ -9,17 +9,39 @@
 <body>
 
     <main class="game-screen">
+
         <button class="back">←</button>
         <button class="home">⌂</button>
 
-        <h1>Klik op objecten voor<br>bewijsstukken</h1>
+        <h1>
+            Zoek de verborgen bewijsstukken
+        </h1>
 
         <button class="hotspot hotspot-1"></button>
         <button class="hotspot hotspot-2"></button>
         <button class="hotspot hotspot-3"></button>
 
-        <p class="progress">Bewijsstukken: 1/3</p>
+        <p class="progress">Bewijsstukken: 0/3</p>
+
+        <div id="popup" class="popup hidden">
+
+            <div class="popup-content">
+
+                <h2>Je hebt het goed!</h2>
+
+                <p>Je letter is:</p>
+
+                <div class="letter">D</div>
+
+                <button id="verderBtn">Verder</button>
+
+            </div>
+
+        </div>
+
     </main>
+
+    <script src="js/puzzel1.js"></script>
 
 </body>
 </html>

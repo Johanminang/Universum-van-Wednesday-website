@@ -30,6 +30,7 @@ body {
     color: red;
     font-size: 45px;
     cursor: pointer;
+    z-index: 10;
 }
 
 .back {
@@ -43,7 +44,6 @@ body {
 h1 {
     position: absolute;
     top: 25px;
-
     width: 100%;
 
     margin: 0;
@@ -51,7 +51,6 @@ h1 {
     text-align: center;
     color: white;
 
-    font-family: 'Cinzel', serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 1.4;
@@ -59,7 +58,6 @@ h1 {
 
 .doors {
     position: absolute;
-
     top: 155px;
     left: 50%;
 
@@ -74,7 +72,6 @@ h1 {
     height: 260px;
 
     background-color: #6d6666;
-
     border: 10px solid black;
 
     color: white;
@@ -82,7 +79,98 @@ h1 {
     font-size: 60px;
 
     cursor: pointer;
-
     transition: 0.3s;
 }
 
+.door:hover {
+    transform: scale(1.05);
+    background-color: #7b7373;
+}
+
+/* ========================= */
+/* POPUPS                    */
+/* ========================= */
+
+.popup {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    z-index: 20;
+}
+
+.popup-content {
+    width: 500px;
+    height: 380px;
+
+    background-color: #423441;
+
+    border-radius: 8px;
+
+    text-align: center;
+    color: white;
+}
+
+.popup-content h2 {
+    margin-top: 40px;
+
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.popup-content p {
+    margin-top: 30px;
+
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.letter-code {
+    margin-top: 20px;
+
+    font-size: 90px;
+    line-height: 1;
+}
+
+#verderBtn,
+#opnieuwBtn {
+    margin-top: 35px;
+
+    width: 250px;
+    height: 60px;
+
+    background-color: #9d9d9d;
+    color: black;
+
+    border: none;
+    border-radius: 10px;
+
+    font-family: 'Cinzel', serif;
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+#verderBtn:hover,
+#opnieuwBtn:hover {
+    background-color: #b5b5b5;
+}
+
+.wrong-text {
+    margin-top: 50px;
+
+    font-size: 24px;
+    line-height: 1.6;
+
+    text-transform: uppercase;
+}
+
+.hidden {
+    display: none;
+}
