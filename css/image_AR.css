@@ -1,6 +1,7 @@
 body {
     margin: 0;
     height: 100vh;
+
     background-image: url("../images/Zolder.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,19 +11,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
     font-family: 'Cinzel', serif;
 }
 
 .game-screen {
     width: 900px;
     height: 650px;
+
     position: relative;
 
-    background-image: url("images/Kamer2.png");
+    background-image: url("../images/Kamer2.png");
     background-size: cover;
     background-position: center;
+
     overflow: hidden;
 }
+
+/* -------------------- */
+/* Navigatie knoppen    */
+/* -------------------- */
 
 .back,
 .home {
@@ -32,9 +40,11 @@ body {
     background: none;
     border: none;
 
-    color: red;
+    color: #7A5BA6;
     font-size: 45px;
+
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .back {
@@ -45,6 +55,16 @@ body {
     right: 20px;
 }
 
+.back:hover,
+.home:hover {
+    color: #B79BE0;
+    transform: scale(1.1);
+}
+
+/* -------------------- */
+/* Titel                */
+/* -------------------- */
+
 h1 {
     position: absolute;
     top: 35px;
@@ -53,27 +73,52 @@ h1 {
     margin: 0;
 
     text-align: center;
-    color: white;
+
+    color: #E8E3F2;
 
     font-family: 'Cinzel', serif;
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 400;
     text-transform: uppercase;
     line-height: 1.4;
+
+    text-shadow: 0px 0px 10px rgba(255,255,255,0.2);
 }
+
+/* -------------------- */
+/* Groot scanvlak       */
+/* -------------------- */
 
 .scan-top {
     position: absolute;
 
-    width: 95px;
-    height: 95px;
+    width: 100px;
+    height: 100px;
 
     top: 125px;
     left: 50%;
+
     transform: translateX(-50%);
 
-    background-color: white;
+    border: 2px solid #7A5BA6;
+    border-radius: 10px;
+
+    background-color: rgba(26,18,38,0.85);
+
+    overflow: hidden;
+
+    box-shadow: 0 0 15px rgba(138,111,168,0.5);
 }
+
+.scan-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* -------------------- */
+/* Drie afbeeldingen    */
+/* -------------------- */
 
 .scan-row {
     position: absolute;
@@ -90,8 +135,56 @@ h1 {
 .scan-box {
     width: 145px;
     height: 180px;
-    background-color: white;
+
+    border: 2px solid #7A5BA6;
+    border-radius: 10px;
+
+    background-color: rgba(26,18,38,0.85);
+
+    overflow: hidden;
+
+    box-shadow: 0 0 15px rgba(138,111,168,0.4);
+
+    transition: all 0.3s ease;
 }
+
+.scan-box img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.scan-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(138,111,168,0.8);
+}
+
+/* Optioneel:
+   Als je later de code 3 subtiel in
+   afbeelding 3 wilt verstoppen */
+
+.scan-box {
+    position: relative;
+}
+
+.hidden-code {
+    position: absolute;
+
+    right: 8px;
+    bottom: 6px;
+
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+
+    color: #2D183F;
+
+    opacity: 0.3;
+}
+
+/* -------------------- */
+/* Verder knop          */
+/* -------------------- */
 
 .next-btn {
     position: absolute;
@@ -102,14 +195,23 @@ h1 {
     width: 180px;
     height: 65px;
 
-    background-color: #423441;
+    background-color: #2D183F;
 
-    color: white;
+    color: #E8E3F2;
+
     font-family: 'Cinzel', serif;
     font-size: 24px;
 
-    border: none;
+    border: 2px solid #8A6FA8;
     border-radius: 12px;
 
     cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.next-btn:hover {
+    background-color: #4A2B68;
+    box-shadow: 0 0 20px rgba(138,111,168,0.7);
+    transform: scale(1.03);
 }

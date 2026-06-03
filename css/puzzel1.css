@@ -70,26 +70,26 @@ h1 {
 
 
 .hotspot-1 {
-    left: 0px;
-    top: 340px;
-    width: 120px;
-    height: 120px;
+    left: 10px;
+    top: 360px;
+    width: 40px;
+    height: 40px;
 }
 
 
 .hotspot-2 {
     left: 300px;
     top: 380px;
-    width: 120px;
-    height: 120px;
+    width: 60px;
+    height: 60px;
 }
 
 
 .hotspot-3 {
     left: 540px;
     top: 520px;
-    width: 120px;
-    height: 120px;
+    width: 60px;
+    height: 60px;
 }
 
 .progress {
