@@ -22,14 +22,14 @@ body {
 
 .back,
 .home {
-    position: absolute;
+    position: fixed;
     top: 25px;
     background: none;
     border: none;
-    color: red;
-    font-size: 38px;
+    color: #4b2d61;
+    font-size: 35px;
+    font-weight: bold;
     cursor: pointer;
-    z-index: 10;
 }
 
 .back {
@@ -38,23 +38,23 @@ body {
 
 .home {
     right: 30px;
-    font-size: 34px;
 }
 
-h1 {
+.title {
     position: absolute;
-    top: 60px;
+    top: 40px;
     left: 50%;
     transform: translateX(-50%);
 
-    margin: 0;
-    width: 600px;
+    padding: 8px 12px;
+    border: 2px solid #9b6dd1;
+    border-radius: 8px;
+    background-color: rgba(28, 22, 45, 0.9);
 
-    text-align: center;
     color: white;
-    font-size: 30px;
-    font-family: 'Cinzel', serif;
+    font-size: 20px;
     text-transform: uppercase;
+    line-height: 1.35;
 }
 
 
@@ -94,15 +94,17 @@ h1 {
 
 .progress {
     position: absolute;
-    bottom: 0;
-    width: 100%;
+    bottom: 23px;
+    left: 50%;
+    transform: translateX(-50%);
 
-    text-align: center;
+    padding: 8px 14px;
+    border: 2px solid #9b6dd1;
+    border-radius: 8px;
+    background-color: rgba(28, 22, 45, 0.9);
 
     color: white;
-    font-size: 30px;
-    font-family: 'Cinzel', serif;
-    font-weight: 400;
+    font-size: 20px;
     text-transform: uppercase;
 }
 

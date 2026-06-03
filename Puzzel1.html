@@ -11,12 +11,13 @@
 
     <main class="game-screen">
 
-        <button class="back">←</button>
-        <button class="home">⌂</button>
+        <button class="back" onclick="history.back()">←</button>
+        <button class="home" onclick="window.location.href='index.html'">⌂</button>
 
-        <h1>
-            Zoek de verborgen bewijsstukken
-        </h1>
+        <div class="title">
+            Klik op objecten voor<br>
+            bewijsstukken
+        </div>
 
         <button class="hotspot hotspot-1"></button>
         <button class="hotspot hotspot-2"></button>
@@ -25,7 +26,7 @@
         <p class="progress">Bewijsstukken: 0/3</p>
 
         <div id="popup" class="popup hidden">
-
+ 
             <div class="popup-content">
 
                 <h2>Je hebt het goed!</h2>

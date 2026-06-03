@@ -31,15 +31,22 @@ body {
 
 .back,
 .home {
+    position: fixed;
+    top: 25px;
     background: none;
     border: none;
-    color: red;
-    font-size: 45px;
+    color: #4b2d61;
+    font-size: 35px;
+    font-weight: bold;
     cursor: pointer;
 }
 
+.back {
+    left: 30px;
+}
+
 .home {
-    font-size: 40px;
+    right: 30px;
 }
 
 h1 {
@@ -75,8 +82,9 @@ h1 {
 }
 
 .symbol {
-    background-color: #423441;
-    color: black;
+    background-color: #1a1226;
+    border: 2px, solid #7a5ba6;
+    color: white;
     font-size: 80px;
 }
 
@@ -90,8 +98,8 @@ h1 {
     width: 140px;
     height: 140px;
 
-    background-color: #8b8b8b;
-    border: none;
+    background-color: #3b3a40;
+    border: 2px, solid #8e8a95;
 
     text-align: center;
 
@@ -107,15 +115,19 @@ h1 {
     width: 220px;
     height: 60px;
 
-    background-color: #423441;
-    color: white;
+    background-color: rgba(45, 35, 60, 0.9);
+    color: #d8c0ff;
 
-    border: none;
-    border-radius: 10px;
+    border: 2px solid #b073e6;
+    border-radius: 8px;;
 
     font-family: 'Cinzel', serif;
     font-size: 24px;
     cursor: pointer;
+}
+
+.check-btn:hover {
+    background-color: #564254;
 }
 
 .popup {

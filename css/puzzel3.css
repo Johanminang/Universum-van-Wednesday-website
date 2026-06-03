@@ -21,24 +21,22 @@ body {
 
 .back,
 .home {
-    position: absolute;
-    top: 20px;
-
+    position: fixed;
+    top: 25px;
     background: none;
     border: none;
-
-    color: red;
-    font-size: 45px;
+    color: #4b2d61;
+    font-size: 35px;
+    font-weight: bold;
     cursor: pointer;
-    z-index: 10;
 }
 
 .back {
-    left: 20px;
+    left: 30px;
 }
 
 .home {
-    right: 20px;
+    right: 30px;
 }
 
 h1 {
@@ -71,10 +69,10 @@ h1 {
     width: 120px;
     height: 260px;
 
-    background-color: #6d6666;
-    border: 10px solid black;
+    background-color: rgba(45, 35, 60, 0.9);
+    border: 2px solid #b073e6;
 
-    color: white;
+    color: #d8c0ff;
     font-family: 'Cinzel', serif;
     font-size: 60px;
 
@@ -86,10 +84,6 @@ h1 {
     transform: scale(1.05);
     background-color: #7b7373;
 }
-
-/* ========================= */
-/* POPUPS                    */
-/* ========================= */
 
 .popup {
     position: absolute;

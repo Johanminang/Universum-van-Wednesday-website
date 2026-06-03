@@ -28,42 +28,26 @@ body {
     overflow: hidden;
 }
 
-/* -------------------- */
-/* Navigatie knoppen    */
-/* -------------------- */
-
 .back,
 .home {
-    position: absolute;
-    top: 20px;
-
+    position: fixed;
+    top: 25px;
     background: none;
     border: none;
-
-    color: #7A5BA6;
-    font-size: 45px;
-
+    color: #4b2d61;
+    font-size: 35px;
+    font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
 }
 
 .back {
-    left: 20px;
+    left: 30px;
 }
 
 .home {
-    right: 20px;
+    right: 30px;
 }
 
-.back:hover,
-.home:hover {
-    color: #B79BE0;
-    transform: scale(1.1);
-}
-
-/* -------------------- */
-/* Titel                */
-/* -------------------- */
 
 h1 {
     position: absolute;
@@ -84,10 +68,6 @@ h1 {
 
     text-shadow: 0px 0px 10px rgba(255,255,255,0.2);
 }
-
-/* -------------------- */
-/* Groot scanvlak       */
-/* -------------------- */
 
 .scan-top {
     position: absolute;
@@ -116,25 +96,21 @@ h1 {
     object-fit: cover;
 }
 
-/* -------------------- */
-/* Drie afbeeldingen    */
-/* -------------------- */
-
 .scan-row {
     position: absolute;
 
-    top: 270px;
+    top: 255px;
     left: 50%;
 
     transform: translateX(-50%);
 
     display: flex;
-    gap: 55px;
+    gap: 90px;
 }
 
 .scan-box {
-    width: 145px;
-    height: 180px;
+    width: 170px;
+    height: 215px;
 
     border: 2px solid #7A5BA6;
     border-radius: 10px;
@@ -160,10 +136,6 @@ h1 {
     box-shadow: 0 0 25px rgba(138,111,168,0.8);
 }
 
-/* Optioneel:
-   Als je later de code 3 subtiel in
-   afbeelding 3 wilt verstoppen */
-
 .scan-box {
     position: relative;
 }
@@ -181,10 +153,6 @@ h1 {
 
     opacity: 0.3;
 }
-
-/* -------------------- */
-/* Verder knop          */
-/* -------------------- */
 
 .next-btn {
     position: absolute;

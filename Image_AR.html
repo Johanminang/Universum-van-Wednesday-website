@@ -10,15 +10,17 @@
 <body>
   <div class="game-screen">
 
-    <button class="back">←</button>
-    <button class="home">⌂</button>
+    <button class="back" onclick="history.back()">←</button>
+    <button class="home" onclick="window.location.href='index.html'">⌂</button>
 
     <h1>
       Scan deze afbeeldingen voor<br>
       verdere aanwijzingen
     </h1>
 
-    <div class="scan-top"></div>
+    <div class="scan-top">
+    <img src="images/qrcode.png" alt="QR Code" class="qr-code">
+  </div>
 
     <div class="scan-row">
       <div class="scan-box">
@@ -35,8 +37,8 @@
       </div>
     </div>
 
-    <a href="scanner.html">
-    <button class="next-btn">Open Scanner</button>
+    <a href="puzzel3.html">
+    <button class="next-btn">Verder</button>
   </a>
 
   </div>

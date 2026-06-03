@@ -1,60 +1,78 @@
 body {
-    background-image: url(../images/Gebouw.png);
+    background-image: url("../images/Gebouw.png");
     background-repeat: no-repeat;
-    background-size: center;
+    background-size: cover;
     background-position: center;
     background-color: black;
     height: 100vh;
     margin: 0;
-
+    font-family: 'Cinzel', serif;
 
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* boven & onder */
-    align-items: center;   
-
+    justify-content: center;
+    align-items: center;
 }
 
-h1 {
-    text-align: center;
-    font-size: 40pt;
-    font-family: 'Cinzel', serif;
+.back,
+.home {
+    position: absolute;
+    top: 25px;
+    background: none;
+    border: none;
+    color: #4b2d61;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.back {
+    left: 30px;
+}
+
+.home {
+    right: 30px;
+}
+
+.story-box {
+    width: 275px;
+    min-height: 300px;
+    padding: 20px 24px;
+    border: 2px solid #8b4cc2;
+    border-radius: 8px;
+    background-color: rgba(20, 18, 35, 0.82);
     color: white;
-    margin-top: 50px;
 }
 
-.container {
-    background-color: gray;
-    width: 634px;
-    height: 747px;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    border-radius: 10px;
-    border: 2px solid black;
+.story-box h1 {
+    font-size: 23px;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
 }
 
-.container p {
-    color: black;
+.story-box p {
+    font-size: 16px;
+    line-height: 1.35;
+    color: #d8d0df;
+    text-transform: uppercase;
+}
+
+.story-box a {
+    text-decoration: none;
+}
+
+.start-btn {
+    display: block;
+    margin: 10px auto 0;
+    width: 170px;
+    height: 48px;
+
+    background-color: rgba(45, 35, 60, 0.9);
+    color: #d8c0ff;
+
+    border: 2px solid #b073e6;
+    border-radius: 8px;
+
     font-family: 'Cinzel', serif;
-    font-size: 25pt;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 464px, fixed;
-    height: 487px, fixed;
-    margin: 25px;
-
-}
-
-.container button {
-    background-color:#423441;
-    color: red;
-    font-size: 25pt;
-    width: 300px;
-    height: 70px;
-    margin-left: 150px;
-    margin-bottom: 25px;
-    border-radius: 10px;
-    border: 2px solid black;
-
+    font-size: 24px;
+    cursor: pointer;
 }

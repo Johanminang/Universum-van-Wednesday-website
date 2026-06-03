@@ -21,24 +21,22 @@ body {
 
 .back,
 .home {
-    position: absolute;
-    top: 20px;
-
+    position: fixed;
+    top: 25px;
     background: none;
     border: none;
-
-    color: red;
-    font-size: 45px;
+    color: #4b2d61;
+    font-size: 35px;
+    font-weight: bold;
     cursor: pointer;
-    z-index: 10;
 }
 
 .back {
-    left: 20px;
+    left: 30px;
 }
 
 .home {
-    right: 20px;
+    right: 30px;
 }
 
 .code-box {
@@ -50,9 +48,9 @@ body {
     width: 530px;
     height: 330px;
 
-    background-color: rgba(40, 40, 40, 0.75);
-    border: 2px solid black;
-    border-radius: 8px;
+    background-color: rgba(28, 22, 45, 0.9);
+    border-radius: 5px;
+    border: 2px solid #9b6dd1;
 
     text-align: center;
 }
@@ -95,12 +93,12 @@ h1 {
     width: 160px;
     height: 55px;
 
-    background-color: #423441;
-    color: white;
+    background-color: rgba(48, 35, 56, 0.9);
+    color: #d8c0ff;
 
-    border: none;
+    border: 2px solid #9b6dd1;
     border-radius: 10px;
-
+    
     font-family: 'Cinzel', serif;
     font-size: 24px;
     cursor: pointer;
