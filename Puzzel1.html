@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bewijsstukken</title>
+    <link rel="stylesheet" href="css/puzzel1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="game-screen">
+
+        <button class="back" onclick="history.back()">←</button>
+        <button class="home" onclick="window.location.href='index.html'">⌂</button>
+
+        <div class="title">
+            Klik op objecten voor<br>
+            bewijsstukken
+        </div>
+
+        <button class="hotspot hotspot-1"></button>
+        <button class="hotspot hotspot-2"></button>
+        <button class="hotspot hotspot-3"></button>
+
+        <p class="progress">Bewijsstukken: 0/3</p>
+
+        <div id="popup" class="popup hidden">
+ 
+            <div class="popup-content">
+
+                <h2>Je hebt het goed!</h2>
+
+                <p>Je letter is:</p>
+
+                <div class="letter">D</div>
+
+                <button id="verderBtn">Verder</button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="js/puzzel1.js"></script>
+
+</body>
+</html>

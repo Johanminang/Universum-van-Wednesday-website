@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url("../images/Kamer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cinzel', serif;
+}
+
+.game-screen {
+    width: 900px;
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+}
+
+.back,
+.home {
+    position: fixed;
+    top: 25px;
+    background: none;
+    border: none;
+    color: #4b2d61;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.back {
+    left: 30px;
+}
+
+.home {
+    right: 30px;
+}
+
+.title {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 8px 12px;
+    border: 2px solid #9b6dd1;
+    border-radius: 8px;
+    background-color: rgba(28, 22, 45, 0.9);
+
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 1.35;
+}
+
+
+.hotspot {
+    position: absolute;
+
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+    z-index: 5;
+}
+
+
+.hotspot-1 {
+    left: 10px;
+    top: 360px;
+    width: 40px;
+    height: 40px;
+}
+
+
+.hotspot-2 {
+    left: 300px;
+    top: 380px;
+    width: 60px;
+    height: 60px;
+}
+
+
+.hotspot-3 {
+    left: 540px;
+    top: 520px;
+    width: 60px;
+    height: 60px;
+}
+
+.progress {
+    position: absolute;
+    bottom: 23px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 8px 14px;
+    border: 2px solid #9b6dd1;
+    border-radius: 8px;
+    background-color: rgba(28, 22, 45, 0.9);
+
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.popup {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+}
+
+.popup-content {
+    width: 500px;
+    height: 380px;
+
+    background-color: #423441;
+    border-radius: 5px;
+
+    text-align: center;
+    color: white;
+    font-family: 'Cinzel', serif;
+}
+
+.popup-content h2 {
+    margin-top: 35px;
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.popup-content p {
+    margin-top: 30px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.letter {
+    margin-top: 15px;
+    font-size: 90px;
+    line-height: 1;
+}
+
+#verderBtn {
+    margin-top: 25px;
+
+    width: 180px;
+    height: 55px;
+
+    background-color: #9b9b9b;
+    color: black;
+
+    border: none;
+    border-radius: 8px;
+
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
