@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url("../images/Slaapkamer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cinzel', serif;
+}
+
+.game-screen {
+    width: 900px;
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+}
+
+.back,
+.home {
+    position: fixed;
+    top: 25px;
+    background: none;
+    border: none;
+    color: #4b2d61;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.back {
+    left: 30px;
+}
+
+.home {
+    right: 30px;
+}
+
+.code-box {
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 530px;
+    height: 330px;
+
+    background-color: rgba(28, 22, 45, 0.9);
+    border-radius: 5px;
+    border: 2px solid #9b6dd1;
+
+    text-align: center;
+}
+
+h1 {
+    margin-top: 30px;
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+
+.code-letters {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.code-input {
+    width: 65px;
+    height: 75px;
+
+    background-color: #e5e5e5;
+    border: none;
+
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 42px;
+    color: black;
+
+    text-transform: uppercase;
+    outline: none;
+}
+
+.next-btn {
+    margin-top: 35px;
+
+    width: 160px;
+    height: 55px;
+
+    background-color: rgba(48, 35, 56, 0.9);
+    color: #d8c0ff;
+
+    border: 2px solid #9b6dd1;
+    border-radius: 10px;
+    
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.next-btn:hover {
+    background-color: #564254;
+}
+
+.popup {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    z-index: 20;
+}
+
+.popup-content {
+    width: 500px;
+    height: 380px;
+
+    background-color: #423441;
+
+    border-radius: 8px;
+
+    text-align: center;
+    color: white;
+}
+
+.popup-content h2 {
+    margin-top: 40px;
+
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.wrong-text {
+    margin-top: 50px;
+
+    font-size: 24px;
+    line-height: 1.6;
+    text-transform: uppercase;
+}
+
+#opnieuwBtn {
+    margin-top: 35px;
+
+    width: 250px;
+    height: 60px;
+
+    background-color: #9d9d9d;
+    color: black;
+
+    border: none;
+    border-radius: 10px;
+
+    font-family: 'Cinzel', serif;
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+#opnieuwBtn:hover {
+    background-color: #b5b5b5;
+}
+
+.hidden {
+    display: none;
+}

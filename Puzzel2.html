@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bewijsstukken puzzel</title>
+  <link rel="stylesheet" href="css/puzzel2.css" />
+</head>
+<body>
+  <div class="game-screen">
+    <div class="top-bar">
+      <button class="back" onclick="history.back()">←</button>
+      <button class="home" onclick="window.location.href='index.html'">⌂</button>
+    </div>
+
+    <h1>Typ de juiste letter bij elk symbool</h1>
+
+    <div class="puzzle">
+      <div class="symbol">∨</div>
+      <div class="symbol">◇</div>
+      <div class="symbol">╱</div>
+      <div class="symbol">☾</div>
+
+      <input type="text" maxlength="1" class="answer">
+      <input type="text" maxlength="1" class="answer">
+      <input type="text" maxlength="1" class="answer">
+      <input type="text" maxlength="1" class="answer">
+    </div>
+
+    <button class="check-btn">Controleer</button>
+  </div>
+
+  <div id="popup" class="popup hidden">
+
+    <div class="popup-content">
+
+        <h2>Je hebt het goed!</h2>
+
+        <p>Je letter is:</p>
+
+        <div class="letter-code">A</div>
+
+        <button id="verderBtn">Verder</button>
+
+    </div>
+
+</div>
+
+<div id="wrongPopup" class="popup hidden">
+
+    <div class="popup-content">
+
+        <h2>Je hebt het fout!</h2>
+
+        <p class="wrong-text">
+            De studenten zijn nog<br>
+            steeds spoorloos
+        </p>
+
+        <button id="opnieuwBtn">Probeer opnieuw</button>
+
+    </div>
+
+</div>
+
+<script src="js/puzzel2.js"></script>
+</body>
+</html>
